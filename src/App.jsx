@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import Button from "./Components/Button";
+import ButtonGradient from "./assets/svg/ButtonGradient";
+import Header from "./Components/Header";
+import Hero from "./Components/Hero";
 
 const App = () => {
   return (
-    <div>
-      <h2 className=' bg-red-300 ' >hello world</h2>
-    </div>
-  )
-}
+    <>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden ">
+        <Header/>
+        <Hero />
 
-export default App
+      </div>
+
+      <ButtonGradient />
+    </>
+  );
+};
+
+export default App;
